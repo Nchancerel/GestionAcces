@@ -1,0 +1,47 @@
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\AfficherEtatTransgerbeur.exe.config
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\AfficherEtatTransgerbeur.exe
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\AfficherEtatTransgerbeur.pdb
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\MahApps.Metro.dll
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\System.Windows.Interactivity.dll
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\MahApps.Metro.pdb
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\MahApps.Metro.xml
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\MainWindow.g.cs
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\App.g.cs
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur_MarkupCompile.cache
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur_MarkupCompile.lref
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\MainWindow.baml
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur.g.resources
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur.Properties.Resources.resources
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur.csproj.GenerateResource.Cache
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur.exe
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur.pdb
+c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur.csprojResolveAssemblyReference.cache
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\AfficherEtatTransgerbeur.exe.config
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur.exe
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur.pdb
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\AfficherEtatTransgerbeur.exe
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\AfficherEtatTransgerbeur.pdb
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\MahApps.Metro.dll
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\MahApps.Metro.pdb
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\MahApps.Metro.xml
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\MainWindow.g.cs
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\App.g.cs
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur_MarkupCompile.cache
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur_MarkupCompile.lref
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\MainWindow.baml
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur.g.resources
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur.Properties.Resources.resources
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur.csproj.GenerateResource.Cache
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\WpfAnimatedGif.dll
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\WpfAnimatedGif.xml
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\PopUpRFID.g.cs
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\PopUpRFID.baml
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\App.baml
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\settings.g.cs
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\settings.baml
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur.csprojResolveAssemblyReference.cache
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\TestConnection.g.cs
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\TestConnection.baml
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\MySql.Data.dll
+C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\MySql.Data.xml
