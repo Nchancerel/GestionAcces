@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\
 AfficherEtatTransgerbeur
 none
 false
 DEBUG;TRACE
-C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\App.xaml
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\App.xaml
 4837796922
 
 131379948678
-18-1749717557
+18-193034379
 MainWindow.xaml;PopUpRFID.xaml;settings.xaml;TestConnection.xaml;
 
-False
+True
 

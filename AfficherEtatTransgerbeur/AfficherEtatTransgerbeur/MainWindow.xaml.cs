@@ -54,7 +54,10 @@ namespace AfficherEtatTransgerbeur
 
         // ---- THREAD
         Thread thread_ReadRFID;
-        Thread Test_BDD;
+        
+        Thread T_Test_BDD;
+        Thread T_Test_RFID;
+        Thread T_Test_AUTOMATE;
         #endregion
 
         //===============================================================
@@ -63,11 +66,29 @@ namespace AfficherEtatTransgerbeur
         {
             InitializeComponent();
 
-            Thread thread_ReadRFID = new Thread(ReadRFID);
+            //====================================
+            #region thread lecture RFID
+            thread_ReadRFID = new Thread(ReadRFID);
             thread_ReadRFID.Start();
+            #endregion
 
-            Thread Test_BDD = new Thread(TestBDD);
-            Test_BDD.Start();
+            //====================================
+            #region Thread Test BDD
+            T_Test_BDD = new Thread(Test_BDD);
+            T_Test_BDD.Start();
+            #endregion
+
+            //====================================
+            #region Thread Test RFID
+            T_Test_RFID = new Thread(Test_RFID);
+            T_Test_RFID.Start();
+            #endregion
+            //====================================
+            #region Thread Test AUTOMATE
+            T_Test_AUTOMATE = new Thread(Test_AUTOMATE);
+            T_Test_AUTOMATE.Start();
+            #endregion
+
 
 
         }
@@ -75,7 +96,7 @@ namespace AfficherEtatTransgerbeur
 
         //===============================================================
         #region procedure de test connection BDD
-        private void TestBDD() {
+        private void Test_BDD() {
             try
             {
                 // 
@@ -102,6 +123,40 @@ namespace AfficherEtatTransgerbeur
         }
         #endregion
 
+        //===============================================================
+        #region procedure de test connection Test_RFID
+        private void Test_RFID()
+        {
+            try
+            {
+                //
+
+
+                Dispatcher.Invoke(new Action(() => UpdateUI_RFID(false)));
+            }
+            catch
+            {
+                Dispatcher.Invoke(new Action(() => UpdateUI_RFID(true)));
+            }
+        }
+        #endregion
+
+        //===============================================================
+        #region procedure de test connection Test_AUTOMATE
+        private void Test_AUTOMATE()
+        {
+            try
+            {
+                if (!RFID_Connect()) { throw new Exception(); }
+                Dispatcher.Invoke(new Action(() => UpdateUI_AUTOMATE(false)));
+            }
+            catch
+            {
+                Dispatcher.Invoke(new Action(() => UpdateUI_AUTOMATE(true)));
+            }
+        }
+        #endregion
+
         private void ReadRFID()
         {
             while (!etat_Connection_RFID) {
@@ -109,11 +164,13 @@ namespace AfficherEtatTransgerbeur
                 //-------------------------------------------------
                 // Verify RFID ModbusTCP connection
                 if (RFID_Connect()) {
-                    Dispatcher.Invoke(new Action(() => UpdateUI_RFID(false)));
+                    etat_Connection_RFID = true;
+                    Dispatcher.Invoke(new Action(() => UpdateUI_RFID(true)));
                 }
 
                 else {
-                    Dispatcher.Invoke(new Action(() => UpdateUI_RFID(true)));
+                    etat_Connection_RFID = false;
+                    Dispatcher.Invoke(new Action(() => UpdateUI_RFID(false)));
                 } 
             }
 
@@ -162,43 +219,40 @@ namespace AfficherEtatTransgerbeur
 
         //===================================================================
         #region ACTION EFFECTUE SI UNE CARTE EST LUE 
-        private void MBmaster_OnResponseData(ushort ID, byte unit, byte function, byte[] values)
-        {
-            Dispatcher.Invoke((DEL_RFID_process)RFID_process, values);
-        }
+        private void MBmaster_OnResponseData(ushort ID, byte unit, byte function, byte[] values) { Dispatcher.Invoke((DEL_RFID_process)RFID_process, values); }
         #endregion
 
         //===================================================================
         #region ACTION EFFECTUE SI AUCUNE CARTE EST PRESENTE
-        private void MBmaster_OnException(ushort id, byte unit, byte function, byte exception)
-        {
-            
-        }
+        private void MBmaster_OnException(ushort id, byte unit, byte function, byte exception) { }
         #endregion
 
 
         //===================================================================
-        #region ACTION EFFECTUE SI AUCUNE CARTE EST PRESENTE
+        #region METHODE DE MISE A JOUR DE L'AFFICHAGE 
+        #region | AUTOMATE
         private void UpdateUI_AUTOMATE(bool _etat)
         {
             if (_etat)
             {
-                BitmapImage img_RFID_ON = new BitmapImage();
-                img_RFID_ON.BeginInit();
-                img_RFID_ON.UriSource = new Uri("/AfficherEtatTransgerbeur;component/img/AUTOMATE_ON.png", UriKind.Relative);
-                img_RFID_ON.EndInit();
-                RFID_status.Source = img_RFID_ON;
+                BitmapImage img_AUTOMATE_ON = new BitmapImage();
+                img_AUTOMATE_ON.BeginInit();
+                img_AUTOMATE_ON.UriSource = new Uri("/AfficherEtatTransgerbeur;component/img/AUTOMATE_ON.png", UriKind.Relative);
+                img_AUTOMATE_ON.EndInit();
+                AUTOMATE_status.Source = img_AUTOMATE_ON;
             }
             else
             {
-                BitmapImage img_RFID_OFF = new BitmapImage();
-                img_RFID_OFF.BeginInit();
-                img_RFID_OFF.UriSource = new Uri("/AfficherEtatTransgerbeur;component/img/AUTOMATE_OFF.png", UriKind.Relative);
-                img_RFID_OFF.EndInit();
-                RFID_status.Source = img_RFID_OFF;
+                BitmapImage img_AUTOMATE_ON = new BitmapImage();
+                img_AUTOMATE_ON.BeginInit();
+                img_AUTOMATE_ON.UriSource = new Uri("/AfficherEtatTransgerbeur;component/img/AUTOMATE_OFF.png", UriKind.Relative);
+                img_AUTOMATE_ON.EndInit();
+                AUTOMATE_status.Source = img_AUTOMATE_ON;
             }
 
         }
+        #endregion
+        #region | RFID
         private void UpdateUI_RFID(bool _etat)
         {
             if (_etat)
@@ -218,6 +272,8 @@ namespace AfficherEtatTransgerbeur
                 RFID_status.Source = img_RFID_OFF;
             }
         }
+        #endregion
+        #region | BDD
         private void UpdateUI_BDD(bool _etat)
         {
             if (_etat)
@@ -234,11 +290,14 @@ namespace AfficherEtatTransgerbeur
                 img_BDD_OFF.BeginInit();
                 img_BDD_OFF.UriSource = new Uri("/AfficherEtatTransgerbeur;component/img/BDD_OFF.png", UriKind.Relative);
                 img_BDD_OFF.EndInit();
-                RFID_status.Source = img_BDD_OFF;
+                BDD_status.Source = img_BDD_OFF;
             }
         }
         #endregion
+        #endregion
 
+        //===================================================================
+        #region PROCEDURE DE TRAITEMENT D'UN TAG RFID 
         private void RFID_process(byte[] values)
         {
             if (!status_RFID_process)
@@ -266,7 +325,10 @@ namespace AfficherEtatTransgerbeur
             }
 
         }
+        #endregion
 
+        //===================================================================
+        #region PROCEDURE CLIC BOUTTON CONFIGURATION
         private void bt_Gear_Click(object sender, RoutedEventArgs e)
         {
             settings PopupSettings = new settings()
@@ -286,5 +348,6 @@ namespace AfficherEtatTransgerbeur
             darkwindow.Close();
             PopupSettings.Focus();
         }
+        #endregion
     }
 }
