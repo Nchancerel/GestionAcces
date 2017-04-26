@@ -60,6 +60,9 @@ namespace AfficherEtatTransgerbeur
         Thread T_Test_BDD;
         Thread T_Test_RFID;
         Thread T_Test_AUTOMATE;
+
+        Thread T_AffichageEtat_CYCLE;
+        Thread T_AffichageEtat_GACHE;
         #endregion
 
         //===============================================================
@@ -88,6 +91,7 @@ namespace AfficherEtatTransgerbeur
             T_Test_RFID.IsBackground = true;
             T_Test_RFID.Start();
             #endregion
+
             //====================================
             #region Thread Test AUTOMATE
             T_Test_AUTOMATE = new Thread(Test_AUTOMATE);
@@ -95,6 +99,19 @@ namespace AfficherEtatTransgerbeur
             T_Test_AUTOMATE.Start();
             #endregion
 
+            //====================================
+            #region Thread Affichage Etat CYCLE
+            T_AffichageEtat_CYCLE = new Thread(AffichageEtat_CYCLE);
+            T_AffichageEtat_CYCLE.IsBackground = true;
+            T_AffichageEtat_CYCLE.Start();
+            #endregion
+
+            //====================================
+            #region Thread Affichage Etat GACHE
+            T_AffichageEtat_GACHE = new Thread(AffichageEtat_GACHE);
+            T_AffichageEtat_GACHE.IsBackground = true;
+            T_AffichageEtat_GACHE.Start();
+            #endregion
 
 
         }
@@ -174,6 +191,52 @@ namespace AfficherEtatTransgerbeur
         }
         #endregion
 
+        //===============================================================
+        #region procedure de test Affichage Etat CYCLE
+        private void AffichageEtat_CYCLE()
+        {
+            while (true)
+            {
+                int etat = 1;
+
+
+                Dispatcher.Invoke(new Action(() => UpdateUI_CYCLE(etat)));
+                Task.Delay(500).Wait();
+
+                etat = 2;
+
+
+                Dispatcher.Invoke(new Action(() => UpdateUI_CYCLE(etat)));
+                Task.Delay(500).Wait();
+
+                etat = 3;
+
+
+                Dispatcher.Invoke(new Action(() => UpdateUI_CYCLE(etat)));
+                Task.Delay(500).Wait();
+            }
+
+        }
+        #endregion
+
+        //===============================================================
+        #region procedure de Affichage Etat GACHE
+        private void AffichageEtat_GACHE()
+        {
+            while (true)
+            {
+
+                Dispatcher.Invoke(new Action(() => UpdateUI_GACHE(true)));
+                Task.Delay(500).Wait();
+                Dispatcher.Invoke(new Action(() => UpdateUI_GACHE(false)));
+                Task.Delay(500).Wait();
+            }
+
+        }
+        #endregion
+
+        //===============================================================
+        #region THREAD de lecture de la sation RFID tout les 500ms
         private void ReadRFID()
         {
             while (true) { 
@@ -196,6 +259,7 @@ namespace AfficherEtatTransgerbeur
             }
             
         }
+        #endregion
 
 
 
@@ -301,6 +365,59 @@ namespace AfficherEtatTransgerbeur
                 img_BDD_OFF.UriSource = new Uri("/AfficherEtatTransgerbeur;component/img/BDD_OFF.png", UriKind.Relative);
                 img_BDD_OFF.EndInit();
                 BDD_status.Source = img_BDD_OFF;
+            }
+        }
+        #endregion
+        #region | BDD
+        private void UpdateUI_CYCLE(int _etat)
+        {
+            var bc = new BrushConverter();
+            switch (_etat)
+            {
+                case 1:
+                    LBL_etatCycle.Content = "EN CYCLE";
+                    LBL_etatCycle.Foreground = (Brush)bc.ConvertFrom("#3FFFFFFF");
+                    BR_etatCycle.Background = (Brush)bc.ConvertFrom("#FF23BD2A");
+                    BR_etatCycle.BorderBrush = (Brush)bc.ConvertFrom("#FF208525");
+                    break;
+                case 2:
+                    LBL_etatCycle.Content = "PAS DE CYCLE";
+                    LBL_etatCycle.Foreground = (Brush)bc.ConvertFrom("#3FFFFFFF");
+                    BR_etatCycle.Background = (Brush)bc.ConvertFrom("#FFFF8C00");
+                    BR_etatCycle.BorderBrush = (Brush)bc.ConvertFrom("#FFFF6400");
+                    break;
+                case 3:
+                    LBL_etatCycle.Content = "ARRET";
+                    LBL_etatCycle.Foreground = (Brush)bc.ConvertFrom("#3FFFFFFF");
+                    BR_etatCycle.Background = (Brush)bc.ConvertFrom("#FFE22828");
+                    BR_etatCycle.BorderBrush = (Brush)bc.ConvertFrom("#FF800808");
+                    break;
+                default:
+                    
+                    break;
+            }
+        }
+        #endregion
+        #region | BDD
+        private void UpdateUI_GACHE(bool _etat)
+        {
+            var bc = new BrushConverter();
+            if (_etat)
+            {
+                
+                //LBL_etatAcces.Content = "AUTORISÉ";
+                LBL_etatAcces.Content = "OUVERT";
+                LBL_etatAcces.Foreground = (Brush)bc.ConvertFrom("#3FFFFFFF");
+                BR_etatAcces.Background = (Brush)bc.ConvertFrom("#FF23BD2A");
+                BR_etatAcces.BorderBrush = (Brush)bc.ConvertFrom("#FF008919");
+            }
+            else
+            {
+                //LBL_etatAcces.Content = "REFUSÉ";
+                LBL_etatAcces.Content = "FERMÉ";
+                LBL_etatAcces.Foreground = (Brush)bc.ConvertFrom("#3FFFFFFF");
+                BR_etatAcces.Background = (Brush)bc.ConvertFrom("#FFE22828");
+                BR_etatAcces.BorderBrush = (Brush)bc.ConvertFrom("#FF890000");
             }
         }
         #endregion
