@@ -50,6 +50,8 @@ namespace AfficherEtatTransgerbeur
         // ---- ETAT DU SYSTEME
         private bool etat_Connection_BDD = false;
         private bool etat_Connection_RFID = false;
+        private bool etat_Connection_AUTOMATE = false;
+
         private bool status_RFID_process = false;
 
         // ---- THREAD
@@ -65,27 +67,31 @@ namespace AfficherEtatTransgerbeur
         public MainWindow()
         {
             InitializeComponent();
-
+            
             //====================================
             #region thread lecture RFID
             thread_ReadRFID = new Thread(ReadRFID);
+            thread_ReadRFID.IsBackground = true;
             thread_ReadRFID.Start();
             #endregion
 
             //====================================
             #region Thread Test BDD
             T_Test_BDD = new Thread(Test_BDD);
+            T_Test_BDD.IsBackground = true;
             T_Test_BDD.Start();
             #endregion
 
             //====================================
             #region Thread Test RFID
             T_Test_RFID = new Thread(Test_RFID);
+            T_Test_RFID.IsBackground = true;
             T_Test_RFID.Start();
             #endregion
             //====================================
             #region Thread Test AUTOMATE
             T_Test_AUTOMATE = new Thread(Test_AUTOMATE);
+            T_Test_AUTOMATE.IsBackground = true;
             T_Test_AUTOMATE.Start();
             #endregion
 
@@ -97,28 +103,52 @@ namespace AfficherEtatTransgerbeur
         //===============================================================
         #region procedure de test connection BDD
         private void Test_BDD() {
-            try
+            while (true)
             {
-                // 
-                conn_BDD = new MySql.Data.MySqlClient.MySqlConnection(info_BDD);
+                try
+                {
+                    conn_BDD = new MySql.Data.MySqlClient.MySqlConnection(info_BDD);
+                    conn_BDD.Open();
 
-                conn_BDD.Open();
+                    MySqlCommand cmd = new MySqlCommand();
+                    cmd.CommandText  = "SELECT * FROM `utilisateur`";
+                    cmd.Connection   = conn_BDD;
 
-                MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandText = "SELECT * FROM `utilisateur`";
+                    MySqlDataReader rdrUser = cmd.ExecuteReader();
+                    rdrUser.Read();
+                    conn_BDD.Close();
 
-                cmd.Connection = conn_BDD;
-                MySqlDataReader rdrUser = cmd.ExecuteReader();
-
-                rdrUser.Read();
-
-                conn_BDD.Close();
-                
-                Dispatcher.Invoke(new Action(() => UpdateUI_BDD(false)));
+                    etat_Connection_BDD = true;
+                    Dispatcher.Invoke(new Action(() => UpdateUI_BDD(true)));
+                }
+                catch
+                {
+                    etat_Connection_BDD = false;
+                    Dispatcher.Invoke(new Action(() => UpdateUI_BDD(false)));
+                }
+                Task.Delay(1000).Wait();
             }
-            catch
+            
+        }
+        #endregion
+
+        //===============================================================
+        #region procedure de test connection Test_AUTOMATE
+        private void Test_AUTOMATE()
+        {
+            while (true)
             {
-                Dispatcher.Invoke(new Action(() => UpdateUI_BDD(true)));
+                try
+                {
+                    //
+
+                    Dispatcher.Invoke(new Action(() => UpdateUI_RFID(false)));
+                }
+                catch
+                {
+                    Dispatcher.Invoke(new Action(() => UpdateUI_RFID(true)));
+                }
+                Task.Delay(1000).Wait();
             }
         }
         #endregion
@@ -127,68 +157,44 @@ namespace AfficherEtatTransgerbeur
         #region procedure de test connection Test_RFID
         private void Test_RFID()
         {
-            try
-            {
-                //
-
-
-                Dispatcher.Invoke(new Action(() => UpdateUI_RFID(false)));
+            while (true) {
+                if (RFID_Connect())
+                {
+                    etat_Connection_RFID = true;
+                    Dispatcher.Invoke(new Action(() => UpdateUI_RFID(true)));
+                }
+                else
+                {
+                    etat_Connection_RFID = false;
+                    Dispatcher.Invoke(new Action(() => UpdateUI_RFID(false)));
+                }
+                Task.Delay(1000).Wait();
             }
-            catch
-            {
-                Dispatcher.Invoke(new Action(() => UpdateUI_RFID(true)));
-            }
-        }
-        #endregion
-
-        //===============================================================
-        #region procedure de test connection Test_AUTOMATE
-        private void Test_AUTOMATE()
-        {
-            try
-            {
-                if (!RFID_Connect()) { throw new Exception(); }
-                Dispatcher.Invoke(new Action(() => UpdateUI_AUTOMATE(false)));
-            }
-            catch
-            {
-                Dispatcher.Invoke(new Action(() => UpdateUI_AUTOMATE(true)));
-            }
+            
         }
         #endregion
 
         private void ReadRFID()
         {
-            while (!etat_Connection_RFID) {
+            while (true) { 
+                while (etat_Connection_RFID)
+                {
+                    ushort ID = ushort.Parse("3");
 
-                //-------------------------------------------------
-                // Verify RFID ModbusTCP connection
-                if (RFID_Connect()) {
-                    etat_Connection_RFID = true;
-                    Dispatcher.Invoke(new Action(() => UpdateUI_RFID(true)));
+                    //byte unit = Convert.ToByte(Properties.Settings.Default.Unit);
+                    //ushort StartAddress = ushort.Parse(Properties.Settings.Default.startAddress);
+                    //byte Length = Convert.ToByte(Properties.Settings.Default.Size);
+
+                    byte unit = Convert.ToByte(1);
+                    ushort StartAddress = 0;
+                    byte Length = Convert.ToByte(32);
+
+
+                    MBmaster.ReadHoldingRegister(ID, unit, StartAddress, Length);
+                    Task.Delay(500).Wait();
                 }
-
-                else {
-                    etat_Connection_RFID = false;
-                    Dispatcher.Invoke(new Action(() => UpdateUI_RFID(false)));
-                } 
             }
-
-            while (etat_Connection_RFID) {
-                ushort ID = ushort.Parse("3");
-
-                //byte unit = Convert.ToByte(Properties.Settings.Default.Unit);
-                //ushort StartAddress = ushort.Parse(Properties.Settings.Default.startAddress);
-                //byte Length = Convert.ToByte(Properties.Settings.Default.Size);
-
-                byte unit = Convert.ToByte(1);
-                ushort StartAddress = 0;
-                byte Length = Convert.ToByte(32);
-
-
-                MBmaster.ReadHoldingRegister(ID, unit, StartAddress, Length);
-                Task.Delay(500).Wait();
-            }
+            
         }
 
 
@@ -199,8 +205,10 @@ namespace AfficherEtatTransgerbeur
         {
             try
             {
-                if (MBmaster.connected) { return true; }
-                else return false;
+                if (MBmaster.connected) {
+                    return true;
+                }
+                return false;
             }
             catch
             {
@@ -212,7 +220,9 @@ namespace AfficherEtatTransgerbeur
                     MBmaster.OnException += new ModbusTCP.Master.ExceptionData(MBmaster_OnException);
                     return true;
                 }
-                catch { return false; }
+                catch {
+                    return false;
+                }
             }
         }
         #endregion
@@ -243,11 +253,11 @@ namespace AfficherEtatTransgerbeur
             }
             else
             {
-                BitmapImage img_AUTOMATE_ON = new BitmapImage();
-                img_AUTOMATE_ON.BeginInit();
-                img_AUTOMATE_ON.UriSource = new Uri("/AfficherEtatTransgerbeur;component/img/AUTOMATE_OFF.png", UriKind.Relative);
-                img_AUTOMATE_ON.EndInit();
-                AUTOMATE_status.Source = img_AUTOMATE_ON;
+                BitmapImage img_AUTOMATE_OFF = new BitmapImage();
+                img_AUTOMATE_OFF.BeginInit();
+                img_AUTOMATE_OFF.UriSource = new Uri("/AfficherEtatTransgerbeur;component/img/AUTOMATE_OFF.png", UriKind.Relative);
+                img_AUTOMATE_OFF.EndInit();
+                AUTOMATE_status.Source = img_AUTOMATE_OFF;
             }
 
         }

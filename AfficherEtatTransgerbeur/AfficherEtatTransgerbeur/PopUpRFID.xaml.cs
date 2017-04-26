@@ -70,6 +70,7 @@ namespace AfficherEtatTransgerbeur
             this.Lvalues = _Lvalues;
 
             T_connectBDD = new Thread(procedure);
+            T_connectBDD.IsBackground = true;
             T_connectBDD.Start();
         }
         #endregion
