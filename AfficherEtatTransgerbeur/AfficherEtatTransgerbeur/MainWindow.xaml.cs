@@ -54,6 +54,9 @@ namespace AfficherEtatTransgerbeur
 
         private bool status_RFID_process = false;
 
+        private int etat_CYCLE = 3;
+        private bool etat_gache = false;
+
         // ---- THREAD
         Thread thread_ReadRFID;
         
@@ -63,6 +66,7 @@ namespace AfficherEtatTransgerbeur
 
         Thread T_AffichageEtat_CYCLE;
         Thread T_AffichageEtat_GACHE;
+        Thread T_MAJ_Automate;
         #endregion
 
         //===============================================================
@@ -111,6 +115,13 @@ namespace AfficherEtatTransgerbeur
             T_AffichageEtat_GACHE = new Thread(AffichageEtat_GACHE);
             T_AffichageEtat_GACHE.IsBackground = true;
             T_AffichageEtat_GACHE.Start();
+            #endregion
+
+            //====================================
+            #region Thread Mise a jour des variable d'ETAT AUTOMATE
+            T_MAJ_Automate = new Thread(MAJ_Automate);
+            T_MAJ_Automate.IsBackground = true;
+            T_MAJ_Automate.Start();
             #endregion
 
 
@@ -192,44 +203,42 @@ namespace AfficherEtatTransgerbeur
         #endregion
 
         //===============================================================
-        #region procedure de test Affichage Etat CYCLE
+        #region procedure d'Affichage Etat CYCLE
         private void AffichageEtat_CYCLE()
         {
-            while (true)
-            {
-                int etat = 1;
-
-
-                Dispatcher.Invoke(new Action(() => UpdateUI_CYCLE(etat)));
+            while (true) { 
+                Dispatcher.Invoke(new Action(() => UpdateUI_CYCLE(etat_CYCLE)));
                 Task.Delay(500).Wait();
 
-                etat = 2;
-
-
-                Dispatcher.Invoke(new Action(() => UpdateUI_CYCLE(etat)));
-                Task.Delay(500).Wait();
-
-                etat = 3;
-
-
-                Dispatcher.Invoke(new Action(() => UpdateUI_CYCLE(etat)));
-                Task.Delay(500).Wait();
             }
 
         }
         #endregion
 
         //===============================================================
-        #region procedure de Affichage Etat GACHE
+        #region procedure d'Affichage Etat GACHE
         private void AffichageEtat_GACHE()
         {
+            while (true) {
+
+                Dispatcher.Invoke(new Action(() => UpdateUI_GACHE(etat_gache)));
+                Task.Delay(500).Wait();
+            }
+
+        }
+        #endregion
+
+        
+        //===============================================================
+        #region procedure de mise a jour
+        private void MAJ_Automate()
+        {
+
             while (true)
             {
+                
 
-                Dispatcher.Invoke(new Action(() => UpdateUI_GACHE(true)));
-                Task.Delay(500).Wait();
-                Dispatcher.Invoke(new Action(() => UpdateUI_GACHE(false)));
-                Task.Delay(500).Wait();
+
             }
 
         }
