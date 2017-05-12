@@ -117,12 +117,7 @@ namespace AfficherEtatTransgerbeur
             T_AffichageEtat_GACHE.Start();
             #endregion
 
-            //====================================
-            #region Thread Mise a jour des variable d'ETAT AUTOMATE
-            T_MAJ_Automate = new Thread(MAJ_Automate);
-            T_MAJ_Automate.IsBackground = true;
-            T_MAJ_Automate.Start();
-            #endregion
+
 
 
         }
@@ -206,6 +201,8 @@ namespace AfficherEtatTransgerbeur
         #region procedure d'Affichage Etat CYCLE
         private void AffichageEtat_CYCLE()
         {
+
+
             while (true) { 
                 Dispatcher.Invoke(new Action(() => UpdateUI_CYCLE(etat_CYCLE)));
                 Task.Delay(500).Wait();
@@ -223,22 +220,6 @@ namespace AfficherEtatTransgerbeur
 
                 Dispatcher.Invoke(new Action(() => UpdateUI_GACHE(etat_gache)));
                 Task.Delay(500).Wait();
-            }
-
-        }
-        #endregion
-
-        
-        //===============================================================
-        #region procedure de mise a jour
-        private void MAJ_Automate()
-        {
-
-            while (true)
-            {
-                
-
-
             }
 
         }
