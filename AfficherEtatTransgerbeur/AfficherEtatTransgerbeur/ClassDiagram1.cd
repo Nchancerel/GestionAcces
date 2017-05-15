@@ -1,2 +1,108 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AfficherEtatTransgerbeur.App">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AfficherEtatTransgerbeur.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="AfficherEtatTransgerbeur.MainWindow.DEL_RFID_process" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MainWindow.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="AfficherEtatTransgerbeur.MainWindow.DEL_UpdateUI" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MainWindow.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAAAAAABgAIAACACAIAgAwYRRJAQDAIECGBCAAgAgAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.517" Collapsed="true" />
+  </Class>
+  <Class Name="AfficherEtatTransgerbeur.PopUpRFID" BaseTypeListCollapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="AfficherEtatTransgerbeur.PopUpRFID.D_UpdateUI_error" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PopUpRFID.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="AfficherEtatTransgerbeur.PopUpRFID.D_UpdateUI_affichage" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PopUpRFID.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AARAAAAAgAEAAACAAAAAIAIAAAAAAAJwAAAAAAAQAQQ=</HashCode>
+      <FileName>PopUpRFID.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AfficherEtatTransgerbeur.settings" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAgAAAAAAAAEAAQAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>settings.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AfficherEtatTransgerbeur.TestConnection" BaseTypeListCollapsed="true">
+    <Position X="1.5" Y="0.75" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="AfficherEtatTransgerbeur.TestConnection.D_UpdateUI" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TestConnection.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAACAABgAAAhAABAAAAAAYAQIABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TestConnection.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ModbusTCP.Master">
+    <Position X="6.75" Y="0.5" Width="3" />
+    <NestedTypes>
+      <Delegate Name="ModbusTCP.Master.ResponseData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>modbusTCP.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="ModbusTCP.Master.ExceptionData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>modbusTCP.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>yIgEBUTAIaERAowFgAMAgAgBCSCQACEAARAbQiAFEQg=</HashCode>
+      <FileName>modbusTCP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AfficherEtatTransgerbeur.Properties.Resources">
+    <Position X="8.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AfficherEtatTransgerbeur.Properties.Settings">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQgQAAAAAABAAAAAAIAAAAAABAAAAAEAAAAAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
