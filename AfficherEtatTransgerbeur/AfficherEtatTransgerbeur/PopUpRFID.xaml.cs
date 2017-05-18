@@ -80,7 +80,7 @@ namespace AfficherEtatTransgerbeur
         private void procedure() {
             try
             {
-                // ---- connexion a la base de donnée
+                // ----  a la base de donnée
                 conn_BDD = new MySql.Data.MySqlClient.MySqlConnection(info_BDD);
                 conn_BDD.Open();
 
@@ -88,8 +88,6 @@ namespace AfficherEtatTransgerbeur
                 string myHex = Hvalues.ToString("X") + Lvalues.ToString("X");  // Gives you hexadecimal
 
                 int TagRFID = Convert.ToInt32(myHex, 16);  // Back to int again.
-
-                //int TagRFID = Convert.ToInt32((Convert.ToString(Hvalues, 2) + Convert.ToString(Lvalues, 2)), 2);
 
                 // ---- creation de la requete SQL
                 MySqlCommand cmd        = new MySqlCommand();
