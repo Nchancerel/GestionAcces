@@ -23,75 +23,57 @@ namespace AfficherEtatTransgerbeur.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string BDD_adresse {
             get {
                 return ((string)(this["BDD_adresse"]));
             }
-            set {
-                this["BDD_adresse"] = value;
-            }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string BDD_nomBase {
             get {
                 return ((string)(this["BDD_nomBase"]));
             }
-            set {
-                this["BDD_nomBase"] = value;
-            }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string BDD_nomUtilisateur {
             get {
                 return ((string)(this["BDD_nomUtilisateur"]));
             }
-            set {
-                this["BDD_nomUtilisateur"] = value;
-            }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string BDD_motDePasse {
             get {
                 return ((string)(this["BDD_motDePasse"]));
             }
-            set {
-                this["BDD_motDePasse"] = value;
-            }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string IP_stationRFID {
             get {
                 return ((string)(this["IP_stationRFID"]));
             }
-            set {
-                this["IP_stationRFID"] = value;
-            }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string IP_automate {
             get {
                 return ((string)(this["IP_automate"]));
-            }
-            set {
-                this["IP_automate"] = value;
             }
         }
     }

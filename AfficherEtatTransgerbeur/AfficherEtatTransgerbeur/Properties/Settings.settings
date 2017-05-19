@@ -2,22 +2,22 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AfficherEtatTransgerbeur.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="BDD_adresse" Type="System.String" Scope="User">
+    <Setting Name="BDD_adresse" Type="System.String" Scope="Application">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="BDD_nomBase" Type="System.String" Scope="User">
+    <Setting Name="BDD_nomBase" Type="System.String" Scope="Application">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="BDD_nomUtilisateur" Type="System.String" Scope="User">
+    <Setting Name="BDD_nomUtilisateur" Type="System.String" Scope="Application">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="BDD_motDePasse" Type="System.String" Scope="User">
+    <Setting Name="BDD_motDePasse" Type="System.String" Scope="Application">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="IP_stationRFID" Type="System.String" Scope="User">
+    <Setting Name="IP_stationRFID" Type="System.String" Scope="Application">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="IP_automate" Type="System.String" Scope="User">
+    <Setting Name="IP_automate" Type="System.String" Scope="Application">
       <Value Profile="(Default)" />
     </Setting>
   </Settings>
