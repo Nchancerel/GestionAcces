@@ -3,16 +3,16 @@
   <Profiles />
   <Settings>
     <Setting Name="adresseIP" Type="System.String" Scope="User">
-      <Value Profile="(Default)">10.16.37.111</Value>
+      <Value Profile="(Default)">10.16.37.114</Value>
     </Setting>
     <Setting Name="Unit" Type="System.String" Scope="User">
-      <Value Profile="(Default)">1</Value>
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="startAddress" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="Size" Type="System.String" Scope="User">
-      <Value Profile="(Default)">32</Value>
+      <Value Profile="(Default)">3</Value>
     </Setting>
     <Setting Name="Setting" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

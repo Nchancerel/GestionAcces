@@ -24,3 +24,29 @@ c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficheurTagRFI
 c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficheurTagRFID\AfficheurTagRFID\bin\Debug\Microsoft.Threading.Tasks.xml
 c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficheurTagRFID\AfficheurTagRFID\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
 c:\users\nicolas.chancerel\documents\visual studio 2015\Projects\AfficheurTagRFID\AfficheurTagRFID\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\bin\Debug\AfficheurTagRFID.exe.config
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\bin\Debug\AfficheurTagRFID.exe
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\bin\Debug\AfficheurTagRFID.pdb
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\bin\Debug\MahApps.Metro.dll
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\bin\Debug\MahApps.Metro.pdb
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\bin\Debug\MahApps.Metro.xml
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\obj\Debug\AfficheurTagRFID.csprojResolveAssemblyReference.cache
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\obj\Debug\MainWindow.g.cs
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\obj\Debug\Settings.g.cs
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\obj\Debug\App.g.cs
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\obj\Debug\AfficheurTagRFID_MarkupCompile.cache
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\obj\Debug\AfficheurTagRFID_MarkupCompile.lref
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\obj\Debug\MainWindow.baml
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\obj\Debug\Settings.baml
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\obj\Debug\AfficheurTagRFID.g.resources
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\obj\Debug\AfficheurTagRFID.Properties.Resources.resources
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\obj\Debug\AfficheurTagRFID.csproj.GenerateResource.Cache
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\obj\Debug\AfficheurTagRFID.exe
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\AfficheurTagRFID\AfficheurTagRFID\obj\Debug\AfficheurTagRFID.pdb

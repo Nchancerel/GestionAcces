@@ -102,3 +102,4 @@ C:\Users\nicol\Documents\GitHub\GestionAcces\AfficherEtatTransgerbeur\AfficherEt
 C:\Users\nicol\Documents\GitHub\GestionAcces\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur.csproj.GenerateResource.Cache
 C:\Users\nicol\Documents\GitHub\GestionAcces\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur.exe
 C:\Users\nicol\Documents\GitHub\GestionAcces\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\obj\Debug\AfficherEtatTransgerbeur.pdb
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\bin\Debug\EasyModbus.dll
