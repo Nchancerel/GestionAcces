@@ -44,7 +44,7 @@
         <!--  -->
 
         <!-- ETAT ACCES -->
-        <Label x:Name="LBL_TITRE_etatAcces" Canvas.ZIndex="1" Content="ETAT DE L'ACCES :" HorizontalAlignment="Left" RenderTransformOrigin="0.308,0.713" Width="525" Height="36" VerticalAlignment="Top" Grid.Row="1" FontSize="20" Margin="91,161,0,0" Grid.RowSpan="2"/>
+        <Label x:Name="LBL_TITRE_etatAcces" Canvas.ZIndex="1" Content="ETAT DE L'ACCES :" HorizontalAlignment="Left" RenderTransformOrigin="0.308,0.713" Width="525" Grid.Row="1" FontSize="20" Margin="91,161,0,0" Grid.RowSpan="2" Height="36" VerticalAlignment="Top"/>
         <Label x:Name="LBL_etatAcces" Canvas.ZIndex="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="FERMER" Margin="91,38,104,0" Height="108" VerticalAlignment="Top" Grid.Row="2" FontSize="48" Foreground="#FF91FF96" FontWeight="Bold"/>
         <Border x:Name="BR_etatAcces" BorderBrush="#FF008919" Canvas.ZIndex="1" BorderThickness="1" Margin="91,17,104,0" Background="#FF28E24A" Height="150" VerticalAlignment="Top" Grid.Row="2">
             <Border.Effect>
@@ -76,9 +76,9 @@
         <!--  -->
 
         <!-- INDICATEUR -->
-        <Image x:Name="RFID_status" Source="img/RFID_OFF.png" HorizontalAlignment="Left" Height="36" Margin="1319,9,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="37"/>
-        <Image x:Name="BDD_status" Source="img/BDD_OFF.png" HorizontalAlignment="Left" Height="36" Margin="1277,10,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="37"/>
-        <Image x:Name="AUTOMATE_status" Source="img/AUTOMATE_OFF.png" HorizontalAlignment="Left" Height="30" Margin="1241,12,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="31"/>
+        <Image x:Name="RFID_status" Source="img/RFID_OFF.png" Height="36" Margin="1319,9,10,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
+        <Image x:Name="BDD_status" Source="img/BDD_OFF.png" Height="36" Margin="1277,10,52,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
+        <Image x:Name="AUTOMATE_status" Source="img/AUTOMATE_OFF.png" Height="30" Margin="1241,12,94,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
         <!--  -->
     </Grid>
 </Window>

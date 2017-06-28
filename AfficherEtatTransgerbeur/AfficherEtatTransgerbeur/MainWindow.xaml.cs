@@ -204,8 +204,14 @@ namespace AfficherEtatTransgerbeur
 
 
             while (true) { 
-                Dispatcher.Invoke(new Action(() => UpdateUI_CYCLE(etat_CYCLE)));
-                Task.Delay(500).Wait();
+                Dispatcher.Invoke(new Action(() => UpdateUI_CYCLE(1)));
+                Task.Delay(5000).Wait();
+
+                Dispatcher.Invoke(new Action(() => UpdateUI_CYCLE(2)));
+                Task.Delay(5000).Wait();
+
+                Dispatcher.Invoke(new Action(() => UpdateUI_CYCLE(3)));
+                Task.Delay(5000).Wait();
 
             }
 
@@ -218,8 +224,11 @@ namespace AfficherEtatTransgerbeur
         {
             while (true) {
 
-                Dispatcher.Invoke(new Action(() => UpdateUI_GACHE(etat_gache)));
-                Task.Delay(500).Wait();
+                Dispatcher.Invoke(new Action(() => UpdateUI_GACHE(true)));
+                Task.Delay(5000).Wait();
+
+                Dispatcher.Invoke(new Action(() => UpdateUI_GACHE(false)));
+                Task.Delay(5000).Wait();
             }
 
         }
