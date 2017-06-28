@@ -25,7 +25,7 @@ namespace AfficheurTagRFID.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("10.16.37.111")]
+        [global::System.Configuration.DefaultSettingValueAttribute("10.16.37.114")]
         public string adresseIP {
             get {
                 return ((string)(this["adresseIP"]));
@@ -37,7 +37,7 @@ namespace AfficheurTagRFID.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public string Unit {
             get {
                 return ((string)(this["Unit"]));
@@ -61,7 +61,7 @@ namespace AfficheurTagRFID.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("32")]
+        [global::System.Configuration.DefaultSettingValueAttribute("3")]
         public string Size {
             get {
                 return ((string)(this["Size"]));

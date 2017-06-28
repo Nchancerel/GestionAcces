@@ -12,8 +12,13 @@ DEBUG;TRACE
 C:\Users\nicol\Documents\GitHub\GestionAcces\AfficherEtatTransgerbeur\AfficherEtatTransgerbeur\App.xaml
 4837796922
 
+<<<<<<< HEAD
 13-1589301842
 18-1225447612
+=======
+131379948678
+19-1407482243
+>>>>>>> d76ca1fc1f9c48587e355f2d9b4bf13f514c1577
 MainWindow.xaml;PopUpRFID.xaml;settings.xaml;TestConnection.xaml;
 
 False

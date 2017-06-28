@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EasyModbus">
+      <HintPath>..\EasyModbus.dll</HintPath>
+    </Reference>
     <Reference Include="MahApps.Metro, Version=1.4.1.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
       <HintPath>..\packages\MahApps.Metro.1.4.1\lib\net45\MahApps.Metro.dll</HintPath>
       <Private>True</Private>
@@ -159,6 +162,10 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\Logobannierelong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\autorise.png" />
+    <Resource Include="img\refuse.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

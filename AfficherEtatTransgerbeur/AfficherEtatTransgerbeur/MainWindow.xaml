@@ -30,9 +30,9 @@
     <Grid ClipToBounds="True" MinHeight="0" Focusable="True" Background="#FFF1F1F1">
         <Grid.RowDefinitions>
             <RowDefinition Height="0*"/>
-            <RowDefinition Height="47*"/>
-            <RowDefinition Height="246"/>
-            <RowDefinition Height="88*"/>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="282"/>
+            <RowDefinition Height="44*"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -44,9 +44,15 @@
         <!--  -->
 
         <!-- ETAT ACCES -->
+<<<<<<< HEAD
         <Label x:Name="LBL_TITRE_etatAcces" Canvas.ZIndex="1" Content="ETAT DE L'ACCES :" HorizontalAlignment="Left" RenderTransformOrigin="0.308,0.713" Width="525" Grid.Row="1" FontSize="20" Margin="91,161,0,0" Grid.RowSpan="2" Height="36" VerticalAlignment="Top"/>
         <Label x:Name="LBL_etatAcces" Canvas.ZIndex="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="FERMER" Margin="91,38,104,0" Height="108" VerticalAlignment="Top" Grid.Row="2" FontSize="48" Foreground="#FF91FF96" FontWeight="Bold"/>
         <Border x:Name="BR_etatAcces" BorderBrush="#FF008919" Canvas.ZIndex="1" BorderThickness="1" Margin="91,17,104,0" Background="#FF28E24A" Height="150" VerticalAlignment="Top" Grid.Row="2">
+=======
+        <Label x:Name="LBL_TITRE_etatAcces" Canvas.ZIndex="1" Content="ETAT DE L'ACCES :" HorizontalAlignment="Left" RenderTransformOrigin="0.308,0.713" Width="525" Height="36" VerticalAlignment="Top" Grid.Row="2" FontSize="20" Margin="91,21,0,0"/>
+        <Label x:Name="LBL_etatAcces" Canvas.ZIndex="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="FERMER" Margin="91,83,104,0" Height="108" VerticalAlignment="Top" Grid.Row="2" FontSize="48" Foreground="#FF91FF96" FontWeight="Bold"/>
+        <Border x:Name="BR_etatAcces" BorderBrush="#FF008919" Canvas.ZIndex="1" BorderThickness="1" Margin="91,62,104,0" Background="#FF28E24A" Height="150" VerticalAlignment="Top" Grid.Row="2">
+>>>>>>> d76ca1fc1f9c48587e355f2d9b4bf13f514c1577
             <Border.Effect>
                 <DropShadowEffect BlurRadius="6" Direction="0" RenderingBias="Quality" ShadowDepth="0"/>
             </Border.Effect>
@@ -64,7 +70,7 @@
         <!--  -->
 
         <!-- SETTINGS -->
-        <Button x:Name="bt_Gear" Margin="10,296,1308,10"  Grid.Row="3" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="bt_Gear_Click">
+        <Button x:Name="bt_Gear" Margin="10,0,0,10"  Grid.Row="3" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="bt_Gear_Click" HorizontalAlignment="Left" Width="48" Height="46" VerticalAlignment="Bottom">
             <DockPanel>
                 <Image Source="img/gear.png" RenderTransformOrigin="0.69,1.071"/>
             </DockPanel>
@@ -72,13 +78,19 @@
         <!--  -->
 
         <!-- GIF -->
-        <Image  x:Name="Gif" gif:ImageBehavior.AnimatedSource="img/ripple.gif" Margin="1275,261,10,10" Grid.Row="3"/>
+        <Image  x:Name="Gif" gif:ImageBehavior.AnimatedSource="img/ripple.gif" Margin="0,0,10,10" Grid.Row="3" Height="81" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="81"/>
         <!--  -->
 
         <!-- INDICATEUR -->
+<<<<<<< HEAD
         <Image x:Name="RFID_status" Source="img/RFID_OFF.png" Height="36" Margin="1319,9,10,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
         <Image x:Name="BDD_status" Source="img/BDD_OFF.png" Height="36" Margin="1277,10,52,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
         <Image x:Name="AUTOMATE_status" Source="img/AUTOMATE_OFF.png" Height="30" Margin="1241,12,94,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
+=======
+        <Image x:Name="RFID_status" Source="img/RFID_OFF.png" Height="36" Margin="0,9,10,0" Grid.RowSpan="2" VerticalAlignment="Top" HorizontalAlignment="Right" Width="37"/>
+        <Image x:Name="BDD_status" Source="img/BDD_OFF.png" HorizontalAlignment="Right" Height="36" Margin="0,10,52,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="37"/>
+        <Image x:Name="AUTOMATE_status" Source="img/AUTOMATE_OFF.png" HorizontalAlignment="Right" Height="30" Margin="0,12,94,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="31"/>
+>>>>>>> d76ca1fc1f9c48587e355f2d9b4bf13f514c1577
         <!--  -->
     </Grid>
 </Window>

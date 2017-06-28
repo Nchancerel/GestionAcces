@@ -20,3 +20,12 @@ C:\Users\nicolas.chancerel\Desktop\ModbusSampleCommon\obj\Debug\Modbus.frmStart.
 C:\Users\nicolas.chancerel\Desktop\ModbusSampleCommon\obj\Debug\ModbusTester.csproj.GenerateResource.Cache
 C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\Documentation\APPLICATION EXEMPLES\ModbusSampleCommon\obj\Debug\ModbusTester.exe
 C:\Users\nicolas.chancerel\Documents\GitHub\SFL1_Transgerbeur\Documentation\APPLICATION EXEMPLES\ModbusSampleCommon\obj\Debug\ModbusTester.pdb
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\ModbusSampleCommon\obj\Debug\ModbusTester.exe
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\ModbusSampleCommon\obj\Debug\ModbusTester.pdb
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\ModbusSampleCommon\bin\Debug\ModbusTester.exe
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\ModbusSampleCommon\bin\Debug\ModbusTester.pdb
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\ModbusSampleCommon\bin\Debug\ModbusTCP.pdb
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\ModbusSampleCommon\bin\Debug\ModbusTCP.xml
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\ModbusSampleCommon\obj\Debug\ModbusTester.csprojResolveAssemblyReference.cache
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\ModbusSampleCommon\obj\Debug\Modbus.frmStart.resources
+C:\Users\nicolas.chancerel\Documents\GitHub\GestionAcces\DOCUMENTATION\SAMPLES\ModbusSampleCommon\obj\Debug\ModbusTester.csproj.GenerateResource.Cache

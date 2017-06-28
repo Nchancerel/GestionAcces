@@ -16,9 +16,12 @@
                 <GradientStop Color="#FFE8E8E8" Offset="1"/>
             </RadialGradientBrush>
         </Grid.Background>
+        <Image x:Name="AUTORISE" Source="img/autorise.png" HorizontalAlignment="Left" Height="54" Margin="350,102,0,0" VerticalAlignment="Top" Width="68" Visibility="Hidden"/>
+        <Image x:Name="REFUSE" Source="img/refuse.png" HorizontalAlignment="Left" Height="36" Margin="350,110,0,0" VerticalAlignment="Top" Width="37" Visibility="Hidden"/>
 
         <Image  x:Name="loader" gif:ImageBehavior.AnimatedSource="img/ring.gif" Margin="0,80,0,80"/>
         <Label x:Name="label_info" Content="" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,104,10,105" FontSize="24" FontFamily="Tw Cen MT"/>
+        <Label x:Name="label_accesRefuse" Content="" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,104,10,105" FontSize="24" FontFamily="Tw Cen MT"/>
 
         <Label x:Name="label_tagRFID" Content="" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,199,0,0" VerticalAlignment="Top" Width="748" Height="47" FontSize="24" FontFamily="Tw Cen MT"/>
 
